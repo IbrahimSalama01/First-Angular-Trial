@@ -10,5 +10,17 @@ import { categories } from '../../utils/db';
   styleUrl: './category.component.css'
 })
 export class CategoryComponent {
-  categories:ICategory[]  = categories
+  categories: ICategory[] = categories
+  categoryResponsiveOptions = [
+    {
+      breakpoint: '1199px',
+      numVisible: 2,
+      numScroll: 2
+    },
+    {
+      breakpoint: '991px',
+      numVisible: 1,
+      numScroll: 1
+    }
+  ]
 }
