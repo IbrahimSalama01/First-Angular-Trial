@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { PrimeNG } from 'primeng/config';
 import { NavbarComponent } from './navbar/navbar.component';
-import { ProductComponent } from './product/product.component';
-import { CategoryComponent } from './category/category.component';
+
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 @Component({
   selector: 'app-root',
-  imports: [NavbarComponent,ProductComponent,CategoryComponent,FooterComponent],
+  imports: [RouterOutlet,NavbarComponent,FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
