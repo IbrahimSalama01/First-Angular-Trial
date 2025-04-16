@@ -1,7 +1,7 @@
+import { ProductService } from './../product.service';
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
 import { IProduct } from '../../utils/interfaces';
-import { products } from '../../utils/db'
 import { ProductCardComponent } from '../product-card/product-card.component';
 @Component({
   selector: 'app-product',
@@ -10,7 +10,10 @@ import { ProductCardComponent } from '../product-card/product-card.component';
   styleUrl: './product.component.css'
 })
 export class ProductComponent {
-  products: IProduct[] = products
+  products!: IProduct[];
+  constructor(ProductService:ProductService) {
+    this.products = ProductService.products
+  }
   productsResponsiveOptions = [
     {
       breakpoint: '1499px',

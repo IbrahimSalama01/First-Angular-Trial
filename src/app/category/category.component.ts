@@ -1,7 +1,7 @@
+import { ProductService } from './../product.service';
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
 import { ICategory } from '../../utils/interfaces';
-import { categories } from '../../utils/db';
 
 @Component({
   selector: 'app-category',
@@ -10,7 +10,10 @@ import { categories } from '../../utils/db';
   styleUrl: './category.component.css'
 })
 export class CategoryComponent {
-  categories: ICategory[] = categories
+  categories!: ICategory[]
+  constructor(ProductService:ProductService) {
+    this.categories = ProductService.categories;
+  }
   categoryResponsiveOptions = [
     {
       breakpoint: '1199px',
