@@ -7,7 +7,7 @@ export class ProductService {
 
 products: IProduct[] = [
   {
-    id: 1,
+    id: 21,
     name: "Wireless Mouse",
     price: 25.99,
     onSale: true,
@@ -16,7 +16,7 @@ products: IProduct[] = [
     image: "https://picsum.photos/598/300"
   },
   {
-    id: 2,
+    id: 22,
     name: "Bluetooth Headphones",
     price: 59.99,
     onSale: false,
@@ -25,7 +25,7 @@ products: IProduct[] = [
     image: "https://picsum.photos/597/300"
   },
   {
-    id: 3,
+    id: 23,
     name: "Yoga Mat",
     price: 19.99,
     onSale: true,
@@ -34,7 +34,7 @@ products: IProduct[] = [
     image: "https://picsum.photos/605/300"
   },
   {
-    id: 4,
+    id: 24,
     name: "Stainless Steel Water Bottle",
     price: 14.49,
     onSale: false,
@@ -43,7 +43,7 @@ products: IProduct[] = [
     image: "https://picsum.photos/600/300"
   },
   {
-    id: 5,
+    id: 25,
     name: "Desk Lamp",
     price: 32.75,
     onSale: false,
@@ -52,7 +52,7 @@ products: IProduct[] = [
     image: "https://picsum.photos/601/300"
   },
   {
-    id: 6,
+    id: 26,
     name: "Gaming Keyboard",
     price: 89.99,
     onSale: true,
@@ -61,7 +61,7 @@ products: IProduct[] = [
     image: "https://picsum.photos/599/300"
   },
   {
-    id: 7,
+    id: 27,
     name: "Running Shoes",
     price: 74.50,
     onSale: false,
@@ -70,7 +70,7 @@ products: IProduct[] = [
     image: "https://picsum.photos/600/299"
   },
   {
-    id: 8,
+    id: 28,
     name: "Smartwatch",
     price: 129.99,
     onSale: false,
@@ -79,7 +79,7 @@ products: IProduct[] = [
     image: "https://picsum.photos/600/301"
   },
   {
-    id: 9,
+    id: 29,
     name: "Electric Kettle",
     price: 29.99,
     onSale: true,
@@ -88,17 +88,14 @@ products: IProduct[] = [
     image: "https://picsum.photos/602/300"
   },
   {
-    id: 10,
+    id: 30,
     name: "Portable Charger",
     price: 22.95,
     onSale: true,
     salePrice: 19.95,
     category: "Accessories",
     image: "https://picsum.photos/603/300"
-  }
-];
-
-moreProducts: IProduct[] = [
+  },
   {
     id: 1,
     name: "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
@@ -175,7 +172,7 @@ moreProducts: IProduct[] = [
     id: 9,
     name: "WD 2TB Elements Portable External Hard Drive - USB 3.0",
     price: 64,
-    category: "electronics",
+    category: "Electronics",
     image: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
     onSale: false,
     salePrice: 64
@@ -184,7 +181,7 @@ moreProducts: IProduct[] = [
     id: 10,
     name: "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
     price: 109,
-    category: "electronics",
+    category: "Electronics",
     image: "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
     onSale: false,
     salePrice: 109
@@ -193,7 +190,7 @@ moreProducts: IProduct[] = [
     id: 11,
     name: "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
     price: 109,
-    category: "electronics",
+    category: "Electronics",
     image: "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
     onSale: false,
     salePrice: 109
@@ -202,7 +199,7 @@ moreProducts: IProduct[] = [
     id: 12,
     name: "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
     price: 114,
-    category: "electronics",
+    category: "Electronics",
     image: "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
     onSale: false,
     salePrice: 114
@@ -211,7 +208,7 @@ moreProducts: IProduct[] = [
     id: 13,
     name: "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
     price: 599,
-    category: "electronics",
+    category: "Electronics",
     image: "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
     onSale: false,
     salePrice: 599
@@ -220,7 +217,7 @@ moreProducts: IProduct[] = [
     id: 14,
     name: "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED",
     price: 999.99,
-    category: "electronics",
+    category: "Electronics",
     image: "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
     onSale: false,
     salePrice: 999.99
