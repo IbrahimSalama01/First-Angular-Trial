@@ -1,6 +1,7 @@
+import { ProductService } from './../product.service';
 import { ProductCardComponent } from '../product-card/product-card.component';
-import { products } from './../../utils/db';
 import { Component } from '@angular/core';
+import { IProduct } from '../../utils/interfaces';
 @Component({
   selector: 'app-products-page',
   imports: [ProductCardComponent,],
@@ -8,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './products-page.component.css'
 })
 export class ProductsPageComponent {
-  products = products
+  products!: IProduct[]
+  moreProducts :IProduct[];
+  constructor(ProductService:ProductService) {
+    this.products = ProductService.products;
+    this.moreProducts = ProductService.moreProducts
+  }
 }
