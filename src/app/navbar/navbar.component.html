@@ -4,8 +4,9 @@
     <h1 class="text-2xl bold">Angular</h1>
   </div>
   <div class="flex gap-4">
-    <a class="font-bold hover:text-blue-600 cursor-pointer" routerLink="#">Home</a>
-    <a class="font-bold hover:text-blue-600 cursor-pointer" routerLink="#">About</a>
-    <a class="font-bold hover:text-blue-600 cursor-pointer" routerLink="#">Contact</a>
+    <a class="font-bold hover:text-blue-600 cursor-pointer" routerLink="/" routerLinkActive="active"   [routerLinkActiveOptions]="{ exact: true }" >Home</a>
+    <a class="font-bold hover:text-blue-600 cursor-pointer" routerLink="#" roterLinkActive="active" >About</a>
+    <a class="font-bold hover:text-blue-600 cursor-pointer" routerLink="#" roterLinkActive="active" >Contact</a>
+    <a class="font-bold hover:text-blue-600 cursor-pointer" routerLink="/products" routerLinkActive="active" >Products</a>
   </div>
 </div>
