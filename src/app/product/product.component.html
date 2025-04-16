@@ -11,58 +11,7 @@
     class="w-full max-w-screen"
   >
     <ng-template let-product #item>
-      <div
-        class="bg-white shadow-lg rounded-2xl m-4 p-6 transition-transform transform hover:scale-105 duration-300"
-      >
-        <div class="mb-4">
-          <div class="relative mx-auto">
-            <img
-              [src]="product.image"
-              [alt]="product.name"
-              class="w-full h-80 object-cover rounded-xl"
-            />
-            @if(product.onSale){
-            <p-tag
-              value="On Sale"
-              severity="success"
-              class="absolute top-2 left-2"
-            />
-            }
-          </div>
-        </div>
-        <div class="mb-2 text-lg font-semibold text-gray-800">
-          {{ product.name }}
-        </div>
-        <div class="flex justify-between items-center">
-          <div class="flex gap-2">
-            <div
-              class="text-xl font-bold"
-              [class]="
-                product.onSale ? 'line-through text-gray-400' : 'text-green-600'
-              "
-            >
-              ${{ product.price }}
-            </div>
-            @if(product.onSale){
-            <div class="text-xl font-bold text-green-600">
-              ${{ product.salePrice }}
-            </div>
-            }
-          </div>
-          <div class="flex space-x-2">
-            <p-button
-              icon="pi pi-heart"
-              severity="secondary"
-              [outlined]="true"
-              styleClass="!p-button-rounded"
-            />
-            <p-button
-              icon="pi pi-shopping-cart"
-              styleClass="!p-button-rounded bg-blue-600 hover:bg-blue-700 border-none"
-            />
-          </div>
-        </div>
-      </div>
+      <app-product-card [product]="product"></app-product-card>
     </ng-template>
   </p-carousel>
 </div>

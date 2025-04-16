@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
-import { Button } from 'primeng/button';
-import { Tag } from 'primeng/tag';
 import { IProduct } from '../../utils/interfaces';
 import { products } from '../../utils/db'
+import { ProductCardComponent } from '../product-card/product-card.component';
 @Component({
   selector: 'app-product',
-  imports: [CarouselModule, Button, Tag],
+  imports: [CarouselModule, ProductCardComponent],
   templateUrl: './product.component.html',
   styleUrl: './product.component.css'
 })
